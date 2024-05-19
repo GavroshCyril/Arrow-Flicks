@@ -1,0 +1,13 @@
+@import "../../assets/styles/variables.scss";
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: $purple-500-main;
+  }
+}

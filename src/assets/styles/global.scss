@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "./variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $grey-100;
+}
+
+.button {
+  font-weight: 600;
+  background-color: $purple-500-main;
+  color: $white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $purple-400;
+  }
+}
+
+.title {
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: $purple-500-main;
+}
+
+.span {
+  color: $grey-600;
+  line-height: 20px;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 15px;
+}

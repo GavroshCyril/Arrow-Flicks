@@ -1,4 +1,5 @@
 import { NoRatedMovies } from "@components/NoRatedMovies";
+import { Modal } from "@components/Modal";
 import "./ratedMoviesPage.scss";
 
 export const RatedMoviesPage = () => {
@@ -8,7 +9,7 @@ export const RatedMoviesPage = () => {
     <>
       {isRated === false ? (
         <div className="wrapper">
-          <NoRatedMovies />
+          <Modal />
         </div>
       ) : (
         <div>

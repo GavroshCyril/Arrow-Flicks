@@ -4,3 +4,6 @@ export * from "./MovieCard";
 export * from "./NoRatedMovies";
 export * from "./SelectGenres";
 export * from "./MovieList";
+export * from "./Breadcrumbs";
+export * from "./CustomLoader";
+export * from "./Modal";

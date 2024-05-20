@@ -1,0 +1,48 @@
+@import "../../assets/styles/variables.scss";
+
+.modal {
+  width: 380px;
+  max-height: 250px;
+  background-color: $white;
+  border-radius: 8px;
+  &-container {
+    padding: 16px;
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey-200;
+    padding-bottom: 16px;
+  }
+  &-span {
+    line-height: 140%;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  &-title {
+    font-weight: 700;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.button-remove-rating {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: $purple-500-main;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    color: $purple-400;
+  }
+}

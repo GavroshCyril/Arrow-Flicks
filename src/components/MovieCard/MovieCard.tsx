@@ -22,7 +22,7 @@ export const MovieCard = ({ movie }) => {
     <div className="card-container">
       <Card radius="12" h={218} w={482} p="24px">
         <Flex justify="space-between">
-          <Link to={`/movies/${movie.title}`}>
+          <Link to={`/movie/${movie.id}`}>
             <Flex>
               <Image
                 src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
@@ -32,7 +32,7 @@ export const MovieCard = ({ movie }) => {
               />
               <Flex justify="space-between" direction="column" ml={16}>
                 <Flex direction="column" gap={8}>
-                  <Text style={{ textWrap: "balance" }} fw={600} c={"#9854F6"} fz={20}>
+                  <Text style={{ textWrap: "balance" }} fw={600} c={"#9854F6"} fz="20px">
                     {movie.title}
                   </Text>
                   <Text span fw={400} c={"#7B7C88"}>
